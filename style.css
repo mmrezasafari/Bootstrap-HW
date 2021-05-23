@@ -4,6 +4,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  display: block ;
+
+  flex-direction: column;
 }
 
 * {
@@ -12,7 +15,7 @@ body {
 
 .slide-1 {
   width: 100%;
-  height: 100%;
+  min-height: 50rem;
   background-image: url(./assets/img/bg-masthead.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -22,13 +25,25 @@ body {
   min-height: 3rem;
 }
 
+#navbar-section-1-1{
+    position: fixed ;
+    width: 100%;
+    top: 0;
+}
+
+nav.scrolled{
+    background: white;
+}
+
 .navbar-collapse {
   flex-grow: 0;
 }
 
 .section-1-2 {
-  height: 100%;
-  display: flex;
+    min-height: 42rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #row-section-1-2 {
@@ -42,7 +57,7 @@ body {
 .header-text-section-1-2 {
   width: 100%;
   font-family: sans-serif;
-  font-size: 40px;
+  font-size: 180%;
   font-weight: 900;
   display: flex;
   justify-content: center;
@@ -116,4 +131,179 @@ body {
     color: rgb(150, 149, 149);
     text-align: center;
     margin-bottom:30px;
+}
+
+.slide-3{
+    padding: 3rem 2rem 3rem 2rem;
+    display: flex;
+}
+
+#img-section-3-1{
+
+    width: 100% ;
+    height: 100% ;
+
+}
+
+#texts-section-3-1{
+    min-height: 16rem;
+    /* border-left: 5px solid rgb(31, 114, 93); */
+}
+
+.head-text-section-3-1{
+    font-size: xx-large;
+}
+
+#desceription-text-section-3-1{
+    padding: 0rem 2rem 0rem 2rem;
+
+}
+
+.slide-4{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+#texts-section-4-1{
+    min-height: 10rem;
+}
+
+
+#img-section-4-1{
+    width: 100% ; 
+    height: 100%;
+}
+
+.head-text-section-4-1{
+    font-size: xx-large;
+}
+
+#desceription-text-section-4-1{
+    padding: 0rem 2rem 0rem 2rem;
+    text-align: center;
+}
+
+.section-4-2{
+    margin-top: 5rem;
+}
+
+
+#texts-section-4-2{
+    min-height: 10rem;
+}
+
+
+
+#img-section-4-2{
+    width: 100%;
+    height: 100%;
+}
+
+.head-text-section-4-2{
+    font-size: xx-large;
+}
+
+#desceription-text-section-4-2{
+    padding: 0rem 2rem 0rem 2rem;
+    text-align: center;
+}
+
+.slide-5{
+    background-image: url(./assets/img/bg-signup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#head-input-section-5-1{
+    font-size: 150%;
+}
+
+#input-section-5-1{
+    width:100% ;
+    padding: 5rem 0rem 2rem 0rem;
+}
+
+#input-self-section-5-1{
+    width: 90%;
+    height: 3.5rem;
+}
+
+#self-btn-section-5-1{
+    background-color: rgb(31, 114, 93); 
+    color:white; 
+    width: 10rem;
+    height: 3rem;
+}
+
+.slide-6{
+    background-color: black;
+    padding: 3rem;
+}
+
+#box-section-6-1{
+    width: 100%;
+    min-height: 15rem;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.text-box-section-6-1{
+    margin: 20px 0 20px 0;
+    border-bottom: 3px solid rgb(31, 114, 93);
+}
+
+.section-6-2{
+    margin-top: 5rem;
+}
+
+#icon-section-6-2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.363);
+    align-items: center;
+    margin: 0 .5rem 0 .5rem;
+}
+
+#copy-right-section-6-2{
+    margin-top: 3rem;
+}
+
+@media screen and (min-width : 992px ) {
+
+    #texts-section-3-1{
+    border-left: 7px solid rgb(41, 114, 94);
+    }
+
+    .section-4-2{
+        margin-top: 0;
+        direction: rtl;
+    }
+    
+    #texts-section-3-1{
+         min-height: 19rem;
+    }
+    
+    #texts-section-4-1{
+        min-height: 440px; 
+    }
+
+    #texts-section-4-2{
+        min-height: 440px;
+    }
+    
+    #box-section-6-1{
+        width: 30% ;
+    }
+
 }
